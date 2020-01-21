@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-header">
+      <h4>Add a new task</h4>
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Description</div>
+            </div>
+            <input type="text" class="form-control" id="description" name="description">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Target Date</div>
+            </div>
+            <input type="text" class="form-control" id="targetDate" name="targetDate">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="isComplete" name="isComplete">
+            <label class="custom-control-label" for="isComplete">This Todo is complete</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="isStarred" name="isStarred">
+            <label class="custom-control-label" for="isStarred">Star this Todo</label>
+          </div>
+        </div>
+        <div class="form-group" id="submitter">
+            <button type="submit" class="btn btn-primary btn-block">Save Todo</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

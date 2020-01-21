@@ -1,0 +1,46 @@
+ <!-- <div class="container-fluid"> -->
+    <!-- <div class="alert alert-danger"><strong>{{errorMessage}}</strong></div> -->
+    <!-- <div class="jumbotron" style="background-color: #f1f2f6;">
+      <h5 class="display-4">To new Beginnings!</h5>
+      <hr class="my-4">
+      <form #signUpForm="ngForm" (ngSubmit)="signUpForm.valid && onboardNewUser()">
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Email Address</div>
+            </div>
+            <input type="email" class="form-control" id="username" name="username" [(ngModel)]="login.username">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Password</div>
+            </div>
+            <input type="password" class="form-control" id="password" name="password" [(ngModel)]="login.password">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <button type="submit" class="btn btn-success mr-3 btn-lg">Create your Account</button>
+          <button class="btn btn-primary mr-3 btn-lg" routerLink="/login">Sign in instead</button>
+        </div>
+      </form>
+    </div>
+  </div>   -->
+
+
+  
+<div class="container-fluid">
+  <div class="login-box">
+    <h1>To new Beginnings!</h1>
+    <form #signUpForm="ngForm" (ngSubmit)="signUpForm.valid && onboardNewUser()">
+        <p>Email</p>
+        <input type="text" placeholder="Enter your Email Address" id="username" name="username" [(ngModel)]="login.username"/>
+        <p></p>
+        <p>Password</p>
+        <input type="password" placeholder="Enter your password" id="password" name="password" [(ngModel)]="login.password"/>
+        <input type="submit"  value="Create your account"/>
+        <input type="submit" routerLink="/login" value="Login"/>
+      </form>
+  </div>
+</div>

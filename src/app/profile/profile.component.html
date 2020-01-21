@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="statsTracker">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h4>Your Stats so far...</h4>
+      </div>
+      <div class="card-body">
+        <p>Todos you have completed:</p>
+        <p>Todos that you still have to work on: </p>
+        <p>Percentage of Todos completed: </p>
+        <p>Percentage of Todos pending: </p>
+      </div>
+    </div>
+  </div>
+  <div class="profileUpdate">
+    <div class="card">
+      <div class="card-header bg-warning">
+        <h4>Update your account credentials</h4>
+      </div>
+      <div class="card-body">
+        <form #profileUpdateForm="ngForm" (ngSubmit)="profileUpdateForm.valid && updateAccountCredentials()">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Email Address</div>
+              </div>
+              <input type="email" class="form-control" id="username" name="username" [(ngModel)]="login.username">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Password</div>
+              </div>
+              <input type="text" class="form-control" id="password" name="password" [(ngModel)]="login.password">
+            </div>
+          </div>
+          <div class="form-group" id="submitter">
+            <button type="submit" class="btn btn-outline-primary btn-block">Update Credentials</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="profileDelete">
+    <div class="card">
+      <div class="card-header bg-danger text-white">
+        <h4>Delete your Account</h4>
+      </div>
+      <div class="card-body">
+        <p><strong><i>We'll be sorry to see you go, but your data is yours. Do as you see fit.</i></strong></p>
+        <button class="btn btn-outline-danger btn-block" id="deleter">Delete account</button>
+      </div>
+    </div>
+  </div>
+</div>

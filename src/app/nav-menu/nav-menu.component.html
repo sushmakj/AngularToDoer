@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #37374a;">
+  <!-- Navbar content -->
+  <a class="navbar-brand" routerLink="/todos" *ngIf="authSvc.detectUserLogin()">Adventure!</a>
+  <a class="navbar-brand" href="#" *ngIf="!authSvc.detectUserLogin()" style="color: #ee5253;">Adventure!</a>
+  <div class="navbar-nav">
+  <a class="nav-item nav-link" routerLink="/todos/{{username}}" *ngIf="authSvc.detectUserLogin()">Todos</a>
+  </div>
+  <div class="navbar-nav navbar-collapse justify-content-end">
+    <!-- navbar-collapse and justify-content-end makes the links appear at the end of the navbar -->
+    <a class="nav-item nav-link" routerLink="/profile/{{username}}" *ngIf="authSvc.detectUserLogin()">Your Profile</a>
+    <a class="nav-item nav-link" routerLink="/login" *ngIf="!authSvc.detectUserLogin()">Login</a>
+    <a class="nav-item nav-link" routerLink="/signup" *ngIf="!authSvc.detectUserLogin()">Sign Up</a>
+    <a class="nav-item nav-link" routerLink="/logout" *ngIf="authSvc.detectUserLogin()">Logout</a>
+  </div>
+</nav>

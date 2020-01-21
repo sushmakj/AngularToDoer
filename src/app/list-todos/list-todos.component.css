@@ -1,0 +1,20 @@
+.todoListContainer {
+  padding-left: 3%;
+  padding-top: 2%;
+}
+
+.todoList {
+  padding-top: 0.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 0.5%;
+}
+
+.container-fluid {
+  background-image: linear-gradient(150deg, #10ac84, #5f27cd);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}

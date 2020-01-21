@@ -1,0 +1,9 @@
+.footerStrip {
+    bottom: 0;
+    background-color: #37374a;
+    padding: 2px;
+    position: relative;
+    height: 28px;
+    text-align: center;
+    width: 100vw;
+}

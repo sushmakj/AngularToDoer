@@ -1,0 +1,54 @@
+.errorContainer {
+  margin: 0;
+  padding: 10%;
+  font-family: 'Bebas Neue', serif;
+  background-image: linear-gradient(125deg, #1B9CFC, #FC427B);
+  width: 100%;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  color: #1b1a1a;
+  border-radius: 10px;
+}
+
+.errorContainer h2 {
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+.errorContainer h6 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+}
+
+.errorContainer h1 {
+    font-size: 200px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    background: url('../../assets/images/dark_stripes.png') center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.errorContainer a {
+    text-decoration: none;
+    font-size: 25px;
+    background: #e74c3c;
+    color: white;
+    padding: 7px 24px;
+    display: inline-block;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    letter-spacing: 2px;
+}
+
+.errorContainer a:hover {
+    background: #c0392b;
+}
+
+.componentContainer {
+    padding: 5vh 5vw;
+}

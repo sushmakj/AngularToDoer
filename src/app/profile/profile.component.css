@@ -1,0 +1,41 @@
+.profileUpdate {
+  padding: 3%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#submitter {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.profileDelete {
+  padding: 3%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#deleter {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.statsTracker {
+    padding: 3%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+  background-image: linear-gradient(125deg, #c56cf0, #18dcff);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+}

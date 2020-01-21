@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="todoListContainer">
+    <h1 class="display-2 text-white">Here's how today looks, {{loggedInUsername}}</h1>
+    <br />
+  </div>
+  <div class="todoList">
+    <div class="card">
+      <div class="card-header">
+        <div class="col-sm-20">
+          <h4 class="d-inline-block">You have {{pendingTodoCount}} tasks due for today.</h4>
+          <a routerLink="/todoform" class="btn btn-success" style="float:right"> + Todo</a>
+        </div>
+      </div>
+      <br />
+      <table class="table table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col" style="width: 80%;">Task</th>
+            <th scope="col" style="width: 15%;">Date</th>
+            <th scope="col" style="width: 5%;">Status</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let todo of todos">
+          <tr>
+            <td>{{todo.description}}</td>
+            <td>{{todo.targetDate | date}}</td>
+            <td style="font-size:120%;font-weight:bold;color:green;">&#10004;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
